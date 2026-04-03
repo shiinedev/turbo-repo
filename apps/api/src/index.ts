@@ -1,10 +1,19 @@
+import express from "express";
 
 
-console.log("Hello from API!");
-console.log("This is the API application of the TurboRepo monorepo.");
+const app = express();
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
-const add = (a: number, b: number): number => {
-    return a + b;
-}
-console.log("2 + 3 =", add(2, 3));
-console.log("This is a simple API application that can be expanded with routes and logic as needed.");
+
+
+app.get("/health", (req, res) => {
+    res.json({ ok: true, message: "Api is running!" ,
+        timestamp: new Date().toISOString(),
+    });
+});
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+});
