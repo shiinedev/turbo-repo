@@ -3,7 +3,7 @@ export interface SelectProps {
   onChange?: (value: string) => void;
 }
 
-const select = ({ options, onChange }: SelectProps) => {
+export const Select = ({ options, onChange }: SelectProps) => {
   return (
     <select onChange={(e) => onChange && onChange(e.target.value)}>
       <option value="">Select an option</option>
@@ -16,4 +16,4 @@ const select = ({ options, onChange }: SelectProps) => {
   );
 };
 
-export default select;
+
