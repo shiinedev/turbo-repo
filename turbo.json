@@ -28,11 +28,6 @@
     "dev": {
       "cache": false,
       "persistent": true
-    },
-    "dry": {
-      "dependsOn": [
-        "^dry"
-      ]
     }
   }
 }
