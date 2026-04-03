@@ -13,7 +13,8 @@
     "devDependencies": {
         "@types/express": "^5.0.6",
         "tsx": "^4.21.0",
-        "typescript": "^5.9.2"
+        "typescript": "^5.9.2",
+        "@repo/types": "workspace:*"
     },
     "dependencies": {
         "express": "^5.2.1",
