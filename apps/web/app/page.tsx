@@ -32,7 +32,7 @@ export default function Home() {
           🧠 GeniusGarage
         </h1>
         <p style={{ fontSize: "1.5rem", color: "#666", marginBottom: "2rem" }}>
-          Manage and share your code snippets
+          Your code snippet library, supercharged with AI
         </p>
 
         <Button>Get Started</Button>
